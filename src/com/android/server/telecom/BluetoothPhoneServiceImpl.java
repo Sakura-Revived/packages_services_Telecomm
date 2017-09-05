@@ -260,7 +260,6 @@ public class BluetoothPhoneServiceImpl {
             }
         }
 
-        @Override
         public boolean isCsCallInProgress() {
             boolean isCsCall = false;
             Call activeCall = mCallsManager.getActiveCall();
@@ -279,7 +278,6 @@ public class BluetoothPhoneServiceImpl {
         *               quality
         *         false otherwise.
         */
-        @Override
         public boolean isHighDefCallInProgress() {
             boolean isHighDef = false;
             Call ringingCall = mCallsManager.getRingingOrSimulatedRingingCall();
